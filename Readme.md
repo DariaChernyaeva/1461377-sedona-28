@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/28/user/1461377).
-* Наставник: `Неизвестно`.
+* Студент: [Дарья Черняева](https://up.htmlacademy.ru/htmlcss/28/user/1461377).
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 

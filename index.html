@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a>
-          <img src="img/logo-sedona.svg" width="138" height="70" alt="Седона">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип седона.">
        </a>
         <ul>
           <li><a href="#">Информация</a></li>
@@ -19,9 +19,10 @@
       </nav>
     </header>
     <main>
+    <!-- <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>-->
       <section>
-          <img src="img/intro-welcome.svg" width="456.65" height="350.88" alt="Вэлком">
-          <img src="img/shape.png" width="1200" height="57" alt"Шейп">
+          <img src="img/intro-welcome.svg" width="456.65" height="350.88" alt="добро пожаловать.">
+          <img src="img/shape.png" width="1200" height="57" alt"шейп.">
     </section>
     <section>
       <h2>Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
@@ -33,22 +34,22 @@
         <p>-№1-</p>
         <p>Седона - не аттракцион для туристов,</br>
           там течёт своя жизнь</p>
-        <img src="img/openbange.jpg" width="800" height="256" alt="опенбанге">
+        <img src="img/openbange.jpg" width="800" height="256" alt="фотограция гостиницы.">
         </section>
           <div>
-          <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
+          <img src="img/icon-1.svg" width="75" height="72" alt="иконка жильё.">
           <h2>Жильё</h2>
           <p>Рекомендуем пожить в настоящем<br>
             мотеле, всё как в кино!</p>
           </div>
           <div>
-          <img src="img/icon-2.svg" width="75" height="70" alt="Еда">
+          <img src="img/icon-2.svg" width="75" height="70" alt="иконка еда.">
           <h2>Еда</h2>
           <p>Всегда заказывайте фирменный бургер,<br>
             Вы не разочаруетесь!</p>
           </div>
           <div>
-          <img src="img/icon-3.svg" width="64" height="77" alt="Сувениры">
+          <img src="img/icon-3.svg" width="64" height="77" alt="иконка сувениры.">
           <h2>Сувениры</h2>
           <p>Не только китайского, но и местного<br>
             производства!</p>
@@ -59,7 +60,7 @@
         <p>-№2-</p>
         <p>Да, по нему можно пройти!Если конечно</br>
         Вы осмелитесь</p>
-        <img src="img/canyon.jpg" width="800" height="256" alt="Каньон">
+        <img src="img/canyon.jpg" width="800" height="256" alt="фотография гранд каньона.">
       </div>
         <div>
         <h2>Небольшая<br>
@@ -89,18 +90,25 @@
      <a href="#">Поиск гостиницы в Седоне</a>
     </section>
     <section>
-      <div>
-          <p>Дата заезда:24 апреля 2017<input type="date" name="calendar1"></p>
-          <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
-          <p>Дата выезда: 4 июля 2017<input type="date" name="calendar2"></p>
-          <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
-          <p>Взрослые:<button>-</button><input>2</input><button>+</button></p>
-          <p>Дети<button>-</button><input>0</input><button>+</button></p>
-      </div>
-      <button type="submit">Найти</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+    <legend>Поиск гостиницы в Седоне</legend>
+    <p>Дата заезда:
+    <label for="date-field">24 апреля 2017</label>
+    <input type="date" name="calendar1" id="date-field" placeholder="24 апреля 2017"></p>
+    <img src="img/calendar.svg" width="21" height="23" alt="календарь.">
+    <p>Дата выезда:
+    <label for="date-field2">4 июля 2017</label>
+    <input type="date" name="calendar2" id="date-field2" placeholder="4 июля 2017"></p>
+    <img src="img/calendar.svg" width="21" height="23" alt="календарь.">
+    <p>Взрослые:<button>-</button><input>2</input><button>+</button></p>
+    <p>Дети<button>-</button><input>0</input><button>+</button></p>
+    <button type="submit">Найти</button>
+    </fieldset>
+    </form>
     </section>
 <section>
-  <img src="img/map.png" width="1199" height="594" alt="Карта">
+  <img src="img/map.png" width="1199" height="594" alt="карта месторасположение.">
   <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13066.627273426153!2d-110.75111347368721!3d35.04031435409556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872e69897cbb996d%3A0x8621e847de1c1455!2z0JfQsNC_0LDQtCDQo9C40L3RgdC70L7Rgywg0KPQuNC90YHQu9C-0YMsINCQ0YDQuNC30L7QvdCwIDg2MDQ3LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1589720306018!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe-->
 </section>
    </main>
@@ -111,14 +119,14 @@
       <p>тел: +7(495)666-02-66</P>
       </div>
       <a href="#">
-      <img src="img/twitter.svg" width="50" height="50" alt="Твиттер"></a>
+      <img src="img/twitter.svg" width="50" height="50" alt="твиттер."></a>
       <a href="#">
-      <img src="img/fb-icon.svg" width="50" height="50" alt="Фейсбук"></a>
+      <img src="img/fb-icon.svg" width="50" height="50" alt="фейсбук."></a>
       <a href="#">
-      <img src="img/youtube.svg" width="50" height="50" alt="Ютуб"></a>
+      <img src="img/youtube.svg" width="50" height="50" alt="ютуб."></a>
     <p>
        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
-       <img src="img/logo-htmlacademy.svg" width="50" height="50" alt="Лого-академия">
+       <img src="img/logo-htmlacademy.svg" width="50" height="50" alt="логотип html академия">
     </p>
   </section>
   </footer>

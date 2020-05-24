@@ -22,7 +22,7 @@
     <!-- <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>-->
       <section>
           <img src="img/intro-welcome.svg" width="456.65" height="350.88" alt="добро пожаловать.">
-          <img src="img/shape.png" width="1200" height="57" alt"шейп.">
+          <img src="img/shape.png" width="1200" height="57" alt="шейп.">
     </section>
     <section>
       <h2>Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
@@ -92,17 +92,20 @@
     <section>
     <form action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
-    <legend>Поиск гостиницы в Седоне</legend>
+    <div>
     <p>Дата заезда:
     <label for="date-field">24 апреля 2017</label>
     <input type="date" name="calendar1" id="date-field" placeholder="24 апреля 2017"></p>
-    <img src="img/calendar.svg" width="21" height="23" alt="календарь.">
+    <button><img src="img/calendar.svg" width="21" height="23" alt="календарь."></button>
+    </div>
+    <div>
     <p>Дата выезда:
     <label for="date-field2">4 июля 2017</label>
     <input type="date" name="calendar2" id="date-field2" placeholder="4 июля 2017"></p>
-    <img src="img/calendar.svg" width="21" height="23" alt="календарь.">
-    <p>Взрослые:<button>-</button><input>2</input><button>+</button></p>
-    <p>Дети<button>-</button><input>0</input><button>+</button></p>
+    <button><img src="img/calendar.svg" width="21" height="23" alt="календарь."></button>
+    </div>
+    <p>Взрослые:<button>-</button><input type="number" name="numbers" min="0" max="20" p>2</input><button>+</button></p>
+    <p>Дети<button>-</button><input type="number" name="numbers2" min="0" max="20">0</input><button>+</button></p>
     <button type="submit">Найти</button>
     </fieldset>
     </form>

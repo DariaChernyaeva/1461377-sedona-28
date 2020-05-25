@@ -20,32 +20,60 @@
     </header>
     <main>
       <!--<h1 class="visually-hidden">Бронирование гостиницы</h1>-->
-<form>
-  <p>Инфраструктура:</p>
-  <p><input type="checkbox" name="a" value="1" checked>Бассейн</p>
-  <p><input type="checkbox" name="a" value="1">Парковка</p>
-  <p><input type="checkbox" name="a" value="1">Wi-Fi</p>
-  <p><input type="checkbox" name="a" value="1" checked>Гостиница</p>
-  <p><input type="checkbox" name="a" value="1" checked>Мотель</p>
-  <p><input type="checkbox" name="a" value="1" checked>Апартаменты</p>
+<form action="https://echo.htmlacademy.ru" method="get">
+  <fieldset>
+  <div>
+  <legend>Инфраструктура:</legend>
+  <ul>
+<li>
+<input type="checkbox" name="waterpool" value="1" id="filter-waterpool" checked>
+<label for="filter-waterpool">Бассейн</label>
+</li>
+<li>
+<input type="checkbox" name="parking" value="1" id="filter-parking">
+<label for="filter-parking">Парковка</label>
+</li>
+<li>
+<input type="checkbox" name="wi-fi" value="1" id="filter-wi-fi">
+<label for="filter-wi-fi">Wi-Fi</label>
+</li>
+</ul>
+</div>
+<div>
+<legend>Тип жилья:</legend>
+<ul>
+<li>
+<input type="checkbox" name="hotel" value="1" id="filter-hotel" checked>
+<label for="filter-hotel">Гостиница</label>
+</li>
+<li>
+<input type="checkbox" name="motel" value="1" id="filter-motel" checked>
+<label for="filter-motel">Мотель</label>
+</li>
+<li>
+<input type="checkbox" name="apartment" value="1" id="filter-apartment" checked>
+<label for="filter-apartment">Апартаменты</label>
+</li>
+</ul>
+</div>
   <p>Стоимость в сутки(р):</p>
   <div>
   <p>от 0</p>
   <p>до 3000</p>
   <img src="img/filter-button.svg" alt="кнопка фильтер.">
   </div>
-  <div class="slidecontainer">
-  <input type="range" min="0" max="3000" value="50" class="slider" id="myRange">
-</div>
+  <label for="slidecontainer"></label>
+  <input type="range" min="0" max="3000" value="2500" step="1" id="slidecontainer">
 <button type="submit">Показать</button>
+</fieldset>
 </form>
 <section>
   <h3>Найдено:3</h3>
   <p>Сортировка</p>
+  <a href="#">
   <button type="button">По цене</button>
   <button type="button">По типу</button>
   <button type="button">По рейтингу</button>
-    <a href="#">
   <img src="img/icon-up-dir.svg" alt="знак вверх.">
   <img src="img/icon-down-dir.svg"  alt="знак вниз.">
 </a>
@@ -108,7 +136,6 @@
     <img src="img/logo-htmlacademy.svg" width="50" height="50" alt="логотип html академия.">
     </a>
     </p>
-
   </section>
   </footer>
 </body>

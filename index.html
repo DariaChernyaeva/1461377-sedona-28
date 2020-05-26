@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <a>
+      <nav class="main-navigation">
+        <a href="index.html">
           <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип седона.">
        </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -25,9 +28,12 @@
           <img src="img/shape.png" width="1200" height="57" alt="шейп.">
     </section>
     <section>
-      <h2>Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
-    </section>
+    <div class="main-header"
+      <h2>Седона - небольшой городок в Аризоне</br>
+         заслуживающий большего!</h2>
+     <p class="description-main-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+     </div>
+     </section>
     <section>
       <h2>Настоящий</br>
         городок</h2>
@@ -84,18 +90,17 @@
         и толпится там</p><
       </div>
     <section>
-    <h2>Заинтересовались</h2>
-    <p>Укажите предполагаемые даты поездки,<br>
-     и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-     <a href="#">Поиск гостиницы в Седоне</a>
-    </section>
-    <section>
-    <form action="https://echo.htmlacademy.ru" method="post">
-    <fieldset>
+    <h2 class="are-you-interested-in">Заинтересовались?
+    <p class="date-of-travel">Укажите предполагаемые даты поездки,<br>
+     и мы покажем Вам лучшие предложения гостиниц в Седоне</p></h2>
+
+     <a class="search-of-hotel" href="#">
+       <img src="img/rectangle.png" width="568" height="86" alt="прямоугольная форма">Поиск гостиницы в Седоне</a>
+    <form>
     <div>
     <p>Дата заезда:
-    <label for="date-field">24 апреля 2017</label>
-    <input type="date" name="calendar1" id="date-field" placeholder="24 апреля 2017"></p>
+    <label for="date-field" class="calendar">24 апреля 2017</label>
+    <input type="date" name="calendar1" id="date-field" class="calendar" placeholder="24 апреля 2017"></p>
     <button><img src="img/calendar.svg" width="21" height="23" alt="календарь."></button>
     </div>
     <div>
@@ -106,8 +111,7 @@
     </div>
     <p>Взрослые:<button>-</button><input type="number" name="numbers" min="0" max="20" p>2</input><button>+</button></p>
     <p>Дети<button>-</button><input type="number" name="numbers2" min="0" max="20">0</input><button>+</button></p>
-    <button type="submit">Найти</button>
-    </fieldset>
+    <button class="button-search" type="submit" >Найти</button>
     </form>
     </section>
 <section>
@@ -115,21 +119,21 @@
   <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13066.627273426153!2d-110.75111347368721!3d35.04031435409556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872e69897cbb996d%3A0x8621e847de1c1455!2z0JfQsNC_0LDQtCDQo9C40L3RgdC70L7Rgywg0KPQuNC90YHQu9C-0YMsINCQ0YDQuNC30L7QvdCwIDg2MDQ3LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1589720306018!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe-->
 </section>
    </main>
-  <footer>
-    <section>
-      <div>
+  <footer class="page-footer main-footer">
+    <section >
+      <div class="contacts">
       <h2>#visitedsedona</h2>
       <p>тел: +7(495)666-02-66</P>
       </div>
-      <a href="#">
-      <img src="img/twitter.svg" width="50" height="50" alt="твиттер."></a>
-      <a href="#">
-      <img src="img/fb-icon.svg" width="50" height="50" alt="фейсбук."></a>
-      <a href="#">
-      <img src="img/youtube.svg" width="50" height="50" alt="ютуб."></a>
+      <a class="footer-class" href="#">
+      <img src="img/twitter.svg" width="17" height="15" alt="твиттер."></a>
+      <a class="footer-class" href="#">
+      <img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук."></a>
+      <a class="footer-class" href="#">
+      <img src="img/youtube.svg" width="20" height="16" alt="ютуб."></a>
     <p>
-       <a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
-       <img src="img/logo-htmlacademy.svg" width="50" height="50" alt="логотип html академия">
+       <a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+       <img src="img/logo-htmlacademy.svg" width="114" height="40" alt="логотип html академия">
     </p>
   </section>
   </footer>

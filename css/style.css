@@ -1,0 +1,191 @@
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+/* Variables */
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-gray: #766357;
+  --basic-light-gray: #EEEEEE;
+  --basic-extra-light-gray: #F2F2F2;
+  --basic-blue: #81B3D2;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+  color: var(--basic-black)
+  background-color:var(--basic-blue);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Main navigation */
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current  a:not([href]) {
+  background-color: var(--basic-gray);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+color: var(--basic-gray);
+}
+
+.main-header{
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-black);
+}
+.main-header .description {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-light-black);
+}
+.are-you-interested-in {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.date-of-travel {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-light-black);
+}
+.search-of-hotel{
+  position: center;
+  width: 568px;
+  height: 86px;
+  height:
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-gray);
+}
+form {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: (--basic-white);
+}
+
+button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+.button-search:{
+  width="458";
+  height="58";
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+
+}
+.calendar {
+  background-color: var(--basic-extra-light-gray);
+
+}
+.button:hover{
+  background-color: var(--basic-gray);
+}
+label {
+  background-color: var(--basic-extra-light-gray);
+}
+.contacts{
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+  color: var(--basic-black);
+  background-color: (--basic-white);
+  }
+
+.footer-class{
+  background-color: var(--basic-blue);
+  height: 48px;
+  Width: 46px;
+  left: 43.67%;
+  right: 52.5%;
+  top: 30%;
+  bottom: 30%;
+}
+.developed-by{
+  font-size: 14px;
+  line-height: 26px;
+  width: 114px;
+  height:40px;
+}
+.in-details {
+background-color: #81B3D2;
+color: var(--basic-white);
+position: absolute;
+width: 110px;
+height: 27px;
+left: 277px;
+top: 453px;
+}

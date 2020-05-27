@@ -28,6 +28,7 @@
 :root {
   --basic-white: #FFFFFF;
   --basic-black: #000000;
+  --basim-medium-black: #666666;
   --basic-light-black: #333333;
   --basic-gray: #766357;
   --basic-light-gray: #EEEEEE;
@@ -183,9 +184,28 @@ label {
 .in-details {
 background-color: #81B3D2;
 color: var(--basic-white);
-position: absolute;
 width: 110px;
 height: 27px;
 left: 277px;
 top: 453px;
+}
+.booking {
+  font-size: 14px;
+  line-height: 21px;
+  width: 142px;
+  height: 27px;
+  left: 393px;
+  top: 604px;
+  background-color: var(--basic-gray);
+  color: var(--basic-white);
+}
+.rating{
+  font-size: 14px;
+  line-height: 21px;
+  width: 83px;
+  height: 21px;
+  left: 1072px;
+  top: 758px;
+  background-color: var(--basic-extra-light-gray);
+  color: var(--basim-medium-black);
 }

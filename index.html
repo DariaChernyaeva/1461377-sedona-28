@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
+  <body class="page-body">
+    <header class="main-header-grid">
       <nav class="main-navigation">
-        <a href="index.html">
-          <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип седона.">
+        <a class="main-header-logo" href="index.html">
+      <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип седона.">
        </a>
+       <div class="main-navigation-wrapper">
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
+        <li> <a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="inner.html">Гостиницы</a></li>
         </ul>
+      </div>
       </nav>
     </header>
     <main>
     <!-- <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>-->
       <section class="intro">
-          <img src="img/intro-welcome.svg" width="457" height="351" alt="добро пожаловать.">
-          <img src="img/shape.png" width="1200" height="57" alt="шейп.">
+          <img class="intro-welcome" src="img/intro-welcome.svg" width="457" height="350" alt="добро пожаловать.">
     </section>
     <section>
-    <div class="main-header"
+    <div class="main-header">
       <h2>Седона - небольшой городок в Аризоне</br>
          заслуживающий большего!</h2>
      <p class="description-main-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
      </div>
      </section>
-    <section>
+
+    <div class="advantages-blue-frame">
       <h2>Настоящий</br>
         городок</h2>
         <p>-№1-</p>
         <p>Седона - не аттракцион для туристов,</br>
           там течёт своя жизнь</p>
         <img src="img/openbange.jpg" width="800" height="256" alt="фотограция гостиницы.">
-        </section>
+      </div>
+
           <div>
           <img src="img/icon-1.svg" width="75" height="72" alt="иконка жильё.">
           <h2>Жильё</h2>
@@ -86,28 +89,31 @@
         туристов</h2>
         <p>-№5-</p>
         <p>Большинство едет в Гранд Каньон<br>
-        и толпится там</p><
+        и толпится там</p>
       </div>
     <section>
-    <h2 class="are-you-interested-in">Заинтересовались?
+    <h2 class="are-you-interested-in">Заинтересовались?</h2>
     <p class="date-of-travel">Укажите предполагаемые даты поездки,<br>
-     и мы покажем Вам лучшие предложения гостиниц в Седоне</p></h2>
-    <form>
+     и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+    <form class="form-flex">
+<div class="search-of-hotel">
+      <h3>Поиск гостиницы в Седоне</h3>
+    </div>
     <div>
-    <p>Дата заезда:
+    <span class="arrival-date">Дата заезда:</span>
     <label for="date-field" class="calendar">24 апреля 2017</label>
-    <input type="date" name="calendar1" id="date-field" class="calendar" placeholder="24 апреля 2017"></p>
+    <input type="date" name="calendar1" id="date-field" class="calendar">
     <button><img src="img/calendar.svg" width="21" height="23" alt="календарь."></button>
     </div>
     <div>
-    <p>Дата выезда:
+    <span class="departure-date">Дата выезда:</span>
     <label for="date-field2">4 июля 2017</label>
-    <input type="date" name="calendar2" id="date-field2" placeholder="4 июля 2017"></p>
+    <input type="date" name="calendar2" id="date-field2">
     <button><img src="img/calendar.svg" width="21" height="23" alt="календарь."></button>
     </div>
-    <p>Взрослые:<button>-</button><input type="number" name="numbers" min="0" max="20" p>2</input><button>+</button></p>
-    <p>Дети<button>-</button><input type="number" name="numbers2" min="0" max="20">0</input><button>+</button></p>
-    <button class="button-search" type="submit" >Найти</button>
+    <p class="adult-button">Взрослые:<button>-</button><input type="number" name="numbers" min="0" max="20">2<button>+</button></p>
+    <p class="children-button">Дети<button>-</button><input type="number" name="numbers2" min="0" max="20">0<button>+</button></p>
+    <button class="button-search" type="submit">Найти</button>
     </form>
     </section>
 <section>
@@ -115,18 +121,20 @@
   <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13066.627273426153!2d-110.75111347368721!3d35.04031435409556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872e69897cbb996d%3A0x8621e847de1c1455!2z0JfQsNC_0LDQtCDQo9C40L3RgdC70L7Rgywg0KPQuNC90YHQu9C-0YMsINCQ0YDQuNC30L7QvdCwIDg2MDQ3LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1589720306018!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe-->
 </section>
    </main>
-  <footer class="page-footer main-footer">
-    <section >
+  <footer>
+    <section class="main-footer-flex" >
       <div class="contacts">
       <h2>#visitedsedona</h2>
       <p>тел: +7(495)666-02-66</P>
       </div>
-      <a class="footer-class" href="#">
+      <div>
+      <a class="social-icons" href="#">
       <img src="img/twitter.svg" width="17" height="15" alt="твиттер."></a>
-      <a class="footer-class" href="#">
+      <a class="social-icons" href="#">
       <img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук."></a>
-      <a class="footer-class" href="#">
+      <a class="social-icons" href="#">
       <img src="img/youtube.svg" width="20" height="16" alt="ютуб."></a>
+    </div>
     <p>
        <a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
        <img src="img/logo-htmlacademy.svg" width="114" height="40" alt="логотип html академия">

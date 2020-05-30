@@ -24,13 +24,14 @@
   --basic-gray: #766357;
   --basic-light-gray: #EEEEEE;
   --basic-extra-light-gray: #F2F2F2;
+  --basic-extra-extra-light-gray: #E5E5E5;
   --basic-blue: #81B3D2;
 }
 
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -44,7 +45,6 @@ body {
 a {
   text-decoration: none;
   color: var(--basic-black);
-  background-color:var(--basic-blue);
 }
 
 img {
@@ -57,11 +57,23 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.main-navigation-wrapper{
+width: 100%;
+margin-bottom: 0px;
 
+}
 .site-navigation {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
 }
+
 .site-navigation-current  a:not([href]) {
   background-color: var(--basic-gray);
 }
@@ -99,14 +111,18 @@ color: var(--basic-gray);
   color: var(--basic-light-black);
 }
 .search-of-hotel{
-  position: center;
   width: 568px;
   height: 86px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  display: flex;
+  justify-content: center;
   color: var(--basic-white);
   background-color: var(--basic-gray);
+}
+h3 {
+  font-size:21px }
 }
 form {
   font-size: 14px;
@@ -117,6 +133,7 @@ form {
 
 .button-search{
   font: inherit;
+  box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -126,6 +143,24 @@ form {
   color: var(--basic-white);
   background-color: var(--basic-blue);
   border: none;
+}
+.button-price{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.button-type{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.button-rating{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
 .calendar {
   background-color: var(--basic-extra-light-gray);
@@ -188,10 +223,155 @@ top: 453px;
 }
 
 .intro{
+display: flex;
+justify-content: center;
 background: url(../img/backgroundphoto1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+.intro-welcome{
+align-self: center;
 }
 
 .intro2{
 background: url(../img/backgroundphoto2.jpg);
+background-position: center;
+background-repeat: no-repeat;
 }
 .
+.advantages-blue-frame{
+  font-size: 21px;
+  line-height: 21px;
+  text-align:center;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.page{
+  height: 100%;
+}
+.page-body{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+}
+.main-header-grid{
+  margin-bottom: 0px;
+  outline-offset: -5px;
+
+}
+.main-header-logo{
+  width: 138px;
+  height: 70 px;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: center;
+}
+.form-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arrival-date{
+  align-self: auto;
+}
+.departure-date{
+  align-self: auto;
+}
+.adult-button{
+  align-self: auto;
+}
+.children-button{
+  align-self: auto;
+}
+.main-footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:flex-end;
+}
+.contacts{
+  align-self: auto;
+}
+.social-icons{
+  align-self: auto;
+}
+.developed-by{
+  align-self: auto;
+}
+.amara-resort-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  border: 1px solid #E5E5E5;
+}
+.amara-resort-image{
+display: flex;
+justify-content: flex-start;
+flex-wrap:wrap;
+}
+.amara-resort-text-and-buttons{
+  flex-direction: column;}
+
+.rating-amara-resort{
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.desert-quail-inn-flex{
+  isplay: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  border: 1px solid #E5E5E5;
+}
+.desert-quail-inn-image{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+
+.desert-quail-inn-text-and-buttons{
+  flex-direction: column;
+}
+
+.rating-desert-quail-inn{
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.villas-flex{
+  isplay: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  border: 1px solid #E5E5E5;
+}
+.villas-image{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+.villas-text-and-buttons{
+  flex-direction: column;
+}
+.rating-villas{
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

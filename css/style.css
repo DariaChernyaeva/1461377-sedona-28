@@ -31,7 +31,7 @@
 /* Global */
 
 body {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -72,6 +72,27 @@ margin-bottom: 0px;
   justify-content: space-around;
   align-items: flex-end;
   flex-direction: row;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+
+}
+ .site-navigation-a {
+   position:relative;
+   bottom: 70px;
+  width: 20%;
+}
+.logo-menu{
+  margin-left: 20%;
+  position: relative;
+  left:-20px;
+}
+
+.site-navigation-a-b{
+  width: 20%;
+  margin-left: 20%;
+  position:relative;
+  bottom: 70px;
 }
 
 .site-navigation-current  a:not([href]) {
@@ -265,6 +286,7 @@ background-repeat: no-repeat;
 .main-header-logo{
   width: 138px;
   height: 70 px;
+
 }
 .container{
   width: 940px;
@@ -305,6 +327,7 @@ background-repeat: no-repeat;
 }
 .social-icons{
   align-self: auto;
+  background-color: var(--basic-blue);
 }
 .developed-by{
   align-self: auto;
@@ -325,10 +348,13 @@ flex-wrap:wrap;
   flex-direction: column;}
 
 .rating-amara-resort{
-  align-self: flex-end;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
+  top: 10px;
+  left:-50px;
 }
 
 .desert-quail-inn-flex{

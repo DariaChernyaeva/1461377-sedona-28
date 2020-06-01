@@ -32,7 +32,7 @@
 
 body {
   width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -62,7 +62,6 @@ img {
   align-items: center;
 }
 .main-navigation-wrapper{
-width: 100%;
 margin-bottom: 0px;
 
 }
@@ -75,11 +74,11 @@ margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   margin: 0px;
+  width: 100%;
+  margin-bottom: 0px;
 
 }
  .site-navigation-a {
-   position:relative;
-   bottom: 70px;
   width: 20%;
 }
 .logo-menu{
@@ -91,8 +90,6 @@ margin-bottom: 0px;
 .site-navigation-a-b{
   width: 20%;
   margin-left: 20%;
-  position:relative;
-  bottom: 70px;
 }
 
 .site-navigation-current  a:not([href]) {
@@ -168,21 +165,27 @@ form {
 .button-price{
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+  border: none;
 }
 .button-type{
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: none;
+  border-bottom: 1px dashed var(--basic-black);
 }
 .button-rating{
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: none;
+  border-bottom: 1px dashed var(--basic-black);
 }
+
 .calendar {
   background-color: var(--basic-extra-light-gray);
 
@@ -284,8 +287,12 @@ background-repeat: no-repeat;
 
 }
 .main-header-logo{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -69px;
   width: 138px;
-  height: 70 px;
+  height: 70px;
 
 }
 .container{
@@ -348,13 +355,9 @@ flex-wrap:wrap;
   flex-direction: column;}
 
 .rating-amara-resort{
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: relative;
-  top: 10px;
-  left:-50px;
 }
 
 .desert-quail-inn-flex{
@@ -381,7 +384,7 @@ flex-wrap:wrap;
   justify-content: space-around;
 }
 .villas-flex{
-  isplay: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap:nowrap;

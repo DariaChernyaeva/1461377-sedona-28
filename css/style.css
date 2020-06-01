@@ -263,12 +263,16 @@ background-position: center;
 background-repeat: no-repeat;
 }
 .
-.advantages-blue-frame{
+.advantages-blue-frame-flex{
   font-size: 21px;
   line-height: 21px;
   text-align:center;
   background-color: var(--basic-blue);
   color: var(--basic-white);
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .page{

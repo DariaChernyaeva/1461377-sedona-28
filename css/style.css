@@ -262,7 +262,7 @@ background: url(../img/backgroundphoto2.jpg);
 background-position: center;
 background-repeat: no-repeat;
 }
-.
+
 .advantages-blue-frame-flex{
   font-size: 21px;
   line-height: 21px;
@@ -270,11 +270,33 @@ background-repeat: no-repeat;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
 }
-
+.advantages-blue-frame2-flex{
+  font-size: 21px;
+  line-height: 21px;
+  text-align:center;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.advantages-first-line-flex{
+  width: 33,3%;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.advantages-second-line-flex{
+  width: 33,3%;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
 .page{
   height: 100%;
 }
@@ -407,4 +429,24 @@ flex-wrap:wrap;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.infrastructure-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.costs-per-day{
+margin-right: 50%
+align-self: stretch;
+}
+.found-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon-up-down{
+align-self:flex-end;
 }

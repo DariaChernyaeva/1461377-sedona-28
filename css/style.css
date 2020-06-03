@@ -22,6 +22,7 @@
   --basim-medium-black: #666666;
   --basic-light-black: #333333;
   --basic-gray: #766357;
+  --basic-normal-gray: #CACACA;
   --basic-light-gray: #EEEEEE;
   --basic-extra-light-gray: #F2F2F2;
   --basic-extra-extra-light-gray: #E5E5E5;
@@ -36,27 +37,29 @@ body {
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
 }
+
 a {
   text-decoration: none;
   color: var(--basic-black);
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
+
 /* Main navigation */
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,8 +79,22 @@ margin-bottom: 0px;
   margin: 0px;
   width: 100%;
   margin-bottom: 0px;
-
 }
+
+.checkboxes{
+font-size: 16px;
+font-weight: normal;
+line-height: 21px;
+color: var(--basic-white);
+list-style: none;
+}
+.head-of-checkbox{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
  .site-navigation-a {
   width: 20%;
 }
@@ -97,11 +114,10 @@ margin-bottom: 0px;
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-color: var(--basic-gray);
+.site-navigation a:focus{
+color: var(--basic-blue);
 }
+
 
 .main-header{
   font-size: 21px;
@@ -111,6 +127,7 @@ color: var(--basic-gray);
 }
 .description-main-header {
   font-size: 14px;
+  font-weight: normal;
   line-height: 26px;
   text-align: center;
   color: var(--basic-light-black);
@@ -129,6 +146,7 @@ color: var(--basic-gray);
   color: var(--basic-light-black);
 }
 .search-of-hotel{
+
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -136,12 +154,11 @@ color: var(--basic-gray);
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: var(--basic-white);
   background-color: var(--basic-gray);
 }
-h3 {
-  font-size:21px }
-}
+
 form {
   font-size: 14px;
   line-height: 26px;
@@ -162,6 +179,23 @@ form {
   background-color: var(--basic-blue);
   border: none;
 }
+.button-range{
+  font-size: 14px;
+  line-height: 21px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: 137px;
+  height: 36px;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+.slidecontainer{
+background-color: var(--basic-white);
+}
 .button-price{
   font-size: 12px;
   line-height: 18px;
@@ -174,16 +208,18 @@ form {
   line-height: 18px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  opacity: 0.3;
   border: none;
-  border-bottom: 1px dashed var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
 }
 .button-rating{
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
+  opacity: 0.3;
   background-color: var(--basic-white);
   border: none;
-  border-bottom: 1px dashed var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
 }
 
 .calendar {
@@ -193,9 +229,7 @@ form {
 .button:hover{
   background-color: var(--basic-gray);
 }
-label {
-  background-color: var(--basic-extra-light-gray);
-}
+
 .contacts{
   font-size: 21px;
   line-height: 26px;
@@ -220,6 +254,7 @@ label {
 .in-details {
 background-color: #81B3D2;
 color: var(--basic-white);
+padding: 3px;
 width: 110px;
 height: 27px;
 left: 277px;
@@ -232,6 +267,7 @@ top: 453px;
   height: 27px;
   left: 393px;
   top: 604px;
+  padding: 3px;
   background-color: var(--basic-gray);
   color: var(--basic-white);
 }
@@ -242,7 +278,6 @@ top: 453px;
   height: 21px;
   left: 1072px;
   top: 758px;
-  background-color: var(--basic-extra-light-gray);
   color: var(--basim-medium-black);
 }
 
@@ -252,50 +287,74 @@ justify-content: center;
 background: url(../img/backgroundphoto1.jpg);
 background-position: center;
 background-repeat: no-repeat;
+width: 1200px;
+height: 509px;
 }
 .intro-welcome{
 align-self: center;
 }
-
 .intro2{
 background: url(../img/backgroundphoto2.jpg);
 background-position: center;
 background-repeat: no-repeat;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
 }
 
-.advantages-blue-frame-flex{
+.names{
   font-size: 21px;
+  line-height: 21px;
+    color: var(--basic-blac);
+}
+.description-names{
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-light-black);
+}
+.advantages-blue-frame-flex{
   line-height: 21px;
   text-align:center;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   display:flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.white-font{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
 }
 .advantages-blue-frame2-flex{
-  font-size: 21px;
-  line-height: 21px;
-  text-align:center;
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-  display:flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+line-height: 21px;
+font-weight: normal;
+text-align:center;
+background-color: var(--basic-blue);
+color: var(--basic-white);
+display:flex;
+align-items: center;
+justify-content: space-around;
+
+
 }
 .advantages-first-line-flex{
   width: 33,3%;
+  min-height: 256px;
   display:flex;
-  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+text-align: center;
 }
 .advantages-second-line-flex{
-  width: 33,3%;
-  display:flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
+width: 33,3%;
+min-height: 256px;
+background-color:var(--basic-light-gray);
+display:flex;
+align-items: center;
+text-align: center;
+justify-content: space-around;
 }
 .page{
   height: 100%;
@@ -307,7 +366,7 @@ background-repeat: no-repeat;
   align-content: start;
 
 }
-.main-header-grid{
+.r-grid{
   margin-bottom: 0px;
   outline-offset: -5px;
 
@@ -319,7 +378,6 @@ background-repeat: no-repeat;
   margin-left: -69px;
   width: 138px;
   height: 70px;
-
 }
 .container{
   width: 940px;
@@ -332,15 +390,26 @@ background-repeat: no-repeat;
   flex-direction: center;
 }
 .form-flex{
+  margin: auto;
+  width: 568px;
+  height: 395px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .arrival-date{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
   align-self: auto;
 }
 .departure-date{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
   align-self: auto;
 }
 .adult-button{
@@ -351,9 +420,8 @@ background-repeat: no-repeat;
 }
 .main-footer-flex{
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items:flex-end;
+  align-items:center;
 }
 .contacts{
   align-self: auto;
@@ -365,12 +433,18 @@ background-repeat: no-repeat;
 .developed-by{
   align-self: auto;
 }
-.amara-resort-flex{
+.hotel-flex{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap:nowrap;
   border: 1px solid #E5E5E5;
+}
+.price-from{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--basic-black);
 }
 .amara-resort-image{
 display: flex;
@@ -386,13 +460,6 @@ flex-wrap:wrap;
   justify-content: space-around;
 }
 
-.desert-quail-inn-flex{
-  isplay: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap:nowrap;
-  border: 1px solid #E5E5E5;
-}
 .desert-quail-inn-image{
   display: flex;
   justify-content: flex-start;
@@ -400,21 +467,6 @@ flex-wrap:wrap;
 }
 
 .desert-quail-inn-text-and-buttons{
-  flex-direction: column;
-}
-
-.rating-desert-quail-inn{
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.villas-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap:nowrap;
-  border: 1px solid #E5E5E5;
 }
 .villas-image{
   display: flex;
@@ -425,17 +477,9 @@ flex-wrap:wrap;
   flex-direction: column;
 }
 .rating-villas{
-  align-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-.infrastructure-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
 }
 .costs-per-day{
 margin-right: 50%
@@ -447,6 +491,25 @@ align-self: stretch;
   justify-content: flex-start;
   align-items: center;
 }
+.sorting{
+  font-size: 12px;
+  line-height: 18px;
+}
+.found{
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+}
 .icon-up-down{
-align-self:flex-end;
+ display: flex;
+align-items: flex-end;
+}
+.icon-up{
+background:var(--basic-normal-gray);
+}
+.icon-down{
+background:var(--basic-normal-blue);
+}
+.type-of-housing{
+margin: 0 auto;
 }

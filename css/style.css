@@ -187,6 +187,8 @@ form {
   line-height: 26px;
   color: var(--basic-black);
   background-color: (--basic-white);
+  position:relative;
+  margin: 30px 0;
 }
 
 .button-search {
@@ -422,6 +424,18 @@ background: url(../img/logo-htmlacademy-gray.png);-
   display: flex;
   align-items: center;
   text-align: center;
+  margin: 0;
+}
+.photo{
+  margin-left: 70px;
+  width: 800px;
+  height: 256px;
+}
+.town{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
 }
 
 .white-font {
@@ -429,7 +443,12 @@ background: url(../img/logo-htmlacademy-gray.png);-
   font-size: 21px;
   line-height: 21px;
 }
-
+.white-font-description{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-aligh: center;
+}
 .advantages-blue-frame2-flex {
   line-height: 21px;
   font-weight: normal;
@@ -681,21 +700,24 @@ color: var(--basic-gray);
 .calendar-icon{
   background: url(../img/calendar-gray.png);
   background-repeat: no-repeat;
-  backgound-position: right bottom;
+  background-position: right bottom;
 }
 .form{
   position: relative;
+  margin: 5px 0px;
 }
 .calendarb{
   position absolute;
   right: 0px;
   top: 0;
+  margin: 50px;
 }
-.calendar::after{
-  padding-right:0px;
+.input{
+-webkit-appearance: none;
+  }
+.calendar{
   position absolute;
-  right: 43.75%;
-  top: 40.11%;
-  left: 43.75%;
-  bottom: 50.91%;
+  height: 40px;
+  width: 200px;
+
 }

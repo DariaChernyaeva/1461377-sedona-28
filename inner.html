@@ -15,7 +15,7 @@
         <img class="logo-menu" src="img/logo-sedona.svg" width="138" height="70" alt="логотип седона.">
       </a>
       <ul class="site-navigation">
-        <li class="site-navigation-a"><a href="#">Информация</a></li>
+        <li class="site-navigation-a information"><a href="#">Информация</a></li>
         <li class="site-navigation-a"><a href="#">Фото и видео</a></li>
         <li class="site-navigation-a-b"><a href="#">Карта штата</a></li>
         <li class="site-navigation-a"><a href="inner.html">Гостиницы</a></li>
@@ -29,34 +29,34 @@
         <div>
           <h3 class="head-of-checkbox">Инфраструктура:</h3>
           <ul class="checkboxes">
-            <li>
-              <input type="checkbox" name="waterpool" value="1" id="filter-waterpool" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="waterpool" value="1" id="filter-waterpool" checked>
               <label for="filter-waterpool">Бассейн</label>
             </li>
-            <li>
-              <input type="checkbox" name="parking" value="1" id="filter-parking">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" value="1" id="filter-parking">
               <label for="filter-parking">Парковка</label>
             </li>
-            <li>
-              <input type="checkbox" name="wi-fi" value="1" id="filter-wi-fi">
-              <label for="filter-wi-fi">Wi-Fi</label>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" value="1" id="filter-wi-fi">
+              <label for="filter-wi-fi" disabled>Wi-Fi</label>
             </li>
           </ul>
         </div>
         <div class="type-of-housing">
-          <h3 class="head-of-checkbox">Тип жилья:</h3>
-          <ul class="checkboxes">
-            <li>
-              <input type="checkbox" name="hotel" value="1" id="filter-hotel" checked>
+          <h3 class="head-of-checkbox-2">Тип жилья:</h3>
+          <ul class="checkboxes-2">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" value="1" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
             </li>
-            <li>
-              <input type="checkbox" name="motel" value="1" id="filter-motel" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" value="1" id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
-            <li>
-              <input type="checkbox" name="apartment" value="1" id="filter-apartment" checked>
-              <label for="filter-apartment">Апартаменты</label>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" value="1" id="filter-apartment" checked>
+              <label for="filter-apartment" disabled>Апартаменты</label>
             </li>
           </ul>
         </div>
@@ -102,7 +102,7 @@
     <section>
       <section class="hotel-flex">
         <div class="amara-resort-image">
-          <img src="img/amararesort.jpg" width="135" height="90" alt="фотография гостиницы amara resort and spa.">
+          <img src="img/amararesort.jpg" width="135" height="90" alt="фотография гостиницы amara resort and spa." class="photo-fit">
           <div class="amara-resort-text-and-buttons">
             <h3 class="head-of-hotel">Amara Resort & Spa</h3>
             <p class="price-from">Гостиница от 4000 р.</P>
@@ -112,8 +112,8 @@
         </div>
 
         <div aria-label="Оценка четыре звёзды">
-          <img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."> <img src="img/star.svg" width="19"
-            height="17" alt="иконка звезда.">
+
+          <img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
           <div>
             <a href="#" class="rating">Рейтинг: 8,5</a>
           </div>
@@ -121,7 +121,7 @@
       </section>
       <section class="hotel-flex">
         <div class="desert-quail-inn-image">
-          <img src="img/desertquailinn.jpg" width="135" height="90" alt="фотография гостиницы desert quai linn.">
+          <img src="img/desertquailinn.jpg" width="135" height="90" alt="фотография гостиницы desert quai linn." class="photo-fit">
 
           <div class="desert-quail-inn-text-and-buttons">
             <h3 class="head-of-hotel">Desert Quail Inn</h3>
@@ -131,15 +131,17 @@
           </div>
         </div>
         <div aria-label="Оценка три звёзды">
+
           <img src="img/star.svg" width="19" height="17" alt="иконка везда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
           <div>
+            </div>
             <a href="#" class="rating">Рейтинг: 8,9</a>
           </div>
         </div>
       </section>
       <section class="hotel-flex">
         <div class="villas-image">
-          <img src="img/villasatpocodiablo.jpg" width="135" height="90" alt="фотография гостиницы villas at poco diablo.">
+          <img src="img/villasatpocodiablo.jpg" width="135" height="90" alt="фотография гостиницы villas at poco diablo." class="photo-fit">
 
           <div class="villas-text-and-buttons">
             <h3 class="head-of-hotel">Villas at Poco Diablo</h3>
@@ -148,7 +150,7 @@
             <a href="#" class="booking-button">Забронировать</a>
           </div>
         </div>
-        <div aria-label="Оценка две звёзды">
+        <div  aria-label="Оценка две звёзды">
           <img src="img/star.svg" width="19" height="17" alt="иконка везда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
           <div>
             <a href="#" class="rating">Рейтинг: 9,2</a>
@@ -160,8 +162,8 @@
   <footer>
     <section class="main-footer-flex">
       <div class="contacts">
-        <h2>#visitedsedona</h2>
-        <p>тел: +7(495)666-02-66</P>
+        <h2 class="visitsedona">#visitsedona</h2>
+        <p class="telsedona">тел: +7(495) 666-01-66</P>
       </div>
       <div class="icon-grid">
         <a class="social-icons" href="#">

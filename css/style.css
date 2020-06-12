@@ -119,7 +119,7 @@ img {
   user-select: none;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox +label::before {
   content: "";
   position: absolute;
   left: -30px;
@@ -130,7 +130,9 @@ img {
   border-radius: 5px;
   background-repeat: no-repeat;
   background-position: 0;
-  -webkit-appearance: none;
+}
+.filter-input-checkbox:checked + label::before{
+background-image: url(../img/checkbox-shape.svg);
 }
 .filter-input-checkbox + label[disabled]{
 opacity: 0.3;
@@ -138,21 +140,6 @@ opacity: 0.3;
 .filter-input-checkbox + label[disabled]{
 opacity: 0.3;
 }
-
-.filter-input-checkbox:checked+label::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -32px;
-  width: 27px;
-  height: 23px;
-  border: 2px solid var(--basic-white);
-  border-radius: 5px;
-  background-image: url(../img/checked-shape.svg);
-  background-repeat: no-repeat;
-  background-position: 0;
-}
-
 .head-of-checkbox {
   font-size: 16px;
   line-height: 21px;
@@ -189,7 +176,6 @@ margin-bottom:25px;
   font-weight: bold;
   color: var(--basic-white);
   margin-top: 26.5px;
-  margin-right: -209px;
 }
 .head-of-checkbox-2{
   margin-left: -214px;
@@ -217,12 +203,13 @@ margin-bottom:25px;
 
 .range-controls .scale {
   height: 2px;
-  width: 220px;
+  width: 317px;
+  margin-top: -20px;
   background: var(--basic-white-opacity);
 }
 
 .range-controls .bar {
-  width: 163px;
+  width: 240px;
   height: 2px;
   background: var(--basic-white);
 }
@@ -242,10 +229,12 @@ margin-bottom:25px;
 
 .range-controls .toggle-min {
   left: 0px;
+  margin-top: -20px;
 }
 
 .range-controls .toggle-max {
-  left: 163px;
+  left: 240px;
+  margin-top: -20px;
 }
 
 .toggle-min:hover {
@@ -286,11 +275,13 @@ margin-bottom:25px;
 .border-price {
   display: flex;
   align-items: center;
-  width: 224px;
+  justify-content: center;
+  width: 317px;
   height: 36px;
   border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
+  margin-right: 50px;
 }
 
 #white-stick {
@@ -299,29 +290,44 @@ margin-bottom:25px;
   background-color: var(--basic-white);
 }
 
-.min-price {
+.min-price1 {
   color: var(--basic-white);
   background-color: transparent;
-  border-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   width: 58px;
   height: 21px;
-  padding: 6.5px 26px 8.5px 28px;
-}
 
-.max-price {
+
+margin-left: 52px;
+}
+.max-price1{
   color: var(--basic-white);
   background-color: transparent;
-  border-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 84px;
+  width: 58px;
   height: 21px;
-  padding: 6.5px 15px 8.5px 28px;
+padding-right: 10px;
+padding-left: 52px;
 }
+
+.min-price2{
+
+  color: var(--basic-white);
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+padding-left: 15px;
+border-style: none;
+margin-right: 5px;
+}
+.max-price2{
+  color: var(--basic-white);
+  background-color: transparent;
+  width: 40px;
+  height: 10px;
+
+border-style: none;
+
+}
+
 
 .price-controls input {
   font-family: inherit;
@@ -470,8 +476,7 @@ form {
   background-color: transparent;
   border: 2px solid var(--basic-white);
   position: absolute;
- margin-top: -32px;
-
+ margin-top: -40px;
 }
 
 .button-range:hover,
@@ -509,9 +514,8 @@ form {
   font-weight: normal;
   opacity: 0.3;
   border: none;
-
   border-bottom: 1px dashed var(--basic-blue);
-  padding-left: 32px;
+  margin-left: 32px;
 }
 
 .button-type:hover,
@@ -533,9 +537,20 @@ form {
   border: none;
   border-bottom: 1px dashed var(--basic-blue);
   font-weight: normal;
-  padding-left: 33px;
+  margin-left: 33px;
 }
-
+.stars img{
+  position: relative;
+  left: 45px;
+}
+.stars2 img{
+  position: relative;
+  left: 61px;
+}
+.stars3 img{
+  position: relative;
+  left: 80px;
+}
 .button-rating:hover,
 .button-type:focus {
   color: var(--basic-blue);
@@ -805,13 +820,19 @@ form {
   justify-content: space-between;
   flex-direction: center;
 }
-
+.section-style{
+  position: relative;
+}
 .form-flex {
   margin: auto;
   width: 568px;
   height: 395px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1072,7 +1093,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-left: 500px;
 }
 .icon-down{
-  padding-left: -73px;
+  padding-left: -85px;
 }
 .icon-up{
   padding-right: 12px;

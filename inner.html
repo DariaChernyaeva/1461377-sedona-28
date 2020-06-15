@@ -16,9 +16,9 @@
       </a>
       <ul class="site-navigation">
         <li class="site-navigation-a information"><a href="#">Информация</a></li>
-        <li class="site-navigation-a"><a href="#">Фото и видео</a></li>
-        <li class="site-navigation-a-b"><a href="#">Карта штата</a></li>
-        <li class="site-navigation-a"><a href="inner.html">Гостиницы</a></li>
+        <li class="site-navigation-a photo-and-video"><a href="#">Фото и видео</a></li>
+        <li class="site-navigation-a-b card-of-states"><a href="#">Карта штата</a></li>
+        <li class="site-navigation-a hotel"><a href="inner.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -46,17 +46,17 @@
         <div class="type-of-housing">
           <h3 class="head-of-checkbox-2">Тип жилья:</h3>
           <ul class="checkboxes-2">
-            <li class="filter-option">
+            <li class="filter-option1">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" value="1" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
             </li>
-            <li class="filter-option">
+            <li class="filter-option1">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" value="1" id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" value="1" id="filter-apartment" checked>
-              <label for="filter-apartment" disabled>Апартаменты</label>
+            <li class="filter-option1">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" value="1" id="filter-apartment" disabled>
+              <label for="filter-apartment">Апартаменты</label>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@
             <p class="head-of-range">Стоимость в сутки(р):</p>
             <div class="border-price">
               <div class="label-1">
-                <label class="min-price1" for="min-price">от <input type="number" name="min-price" value="0" class="min-price2" id="min-price"></label></div>
+                <label class="min-price1" for="min-price">от <input type="number" name="min-price" value="0" class="min-price2" id="min-price">0</label></div>
               <div id="white-stick"></div>
               <div class="label-2">
                 <label class="max-price1">до <input type="number" name="max-price" value="3000" class="max-price2"></label></div>
@@ -88,7 +88,7 @@
     </form>
     <section>
       <div class="found-flex">
-        <h3 class="found">Найдено:3</h3>
+        <h3 class="found">Найдено: 3</h3>
         <p class="sorting">Сортировка:</p>
         <a href="#" class="button-price">По цене</a>
         <a href="#" class="button-type">По типу</a>
@@ -105,7 +105,7 @@
           <img src="img/amararesort.jpg" width="135" height="90" alt="фотография гостиницы amara resort and spa." class="photo-fit">
           <div class="amara-resort-text-and-buttons">
             <h3 class="head-of-hotel">Amara Resort & Spa</h3>
-            <p class="price-from">Гостиница от 4000 р.</P>
+            <p class="price-from">Гостиница <span class="price1">от 4000 р.</span></p>
             <a href="#" class="in-details-button">Подробнее</a>
             <a href="#" class="booking-button">Забронировать</a>
           </div>
@@ -113,7 +113,7 @@
 
         <div class="stars" aria-label="Оценка четыре звёзды">
 
-          <img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
+          <img src="img/star.svg" width="19" height="17" alt="иконка звезда."> <img src="img/star.svg" width="19" height="17" alt="иконка звезда."> <img src="img/star.svg" width="19" height="17" alt="иконка звезда."> <img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
           <div>
             <a href="#" class="rating">Рейтинг: 8,5</a>
           </div>
@@ -125,14 +125,14 @@
 
           <div class="desert-quail-inn-text-and-buttons">
             <h3 class="head-of-hotel">Desert Quail Inn</h3>
-            <p class="price-from"> Мотель от 3000 р.</p>
+            <p class="price-from"> Мотель <span class="price2"> от 3000 р.</span></p>
             <a href="#" class="in-details-button">Подробнее</a>
             <a href="#" class="booking-button">Забронировать</a>
           </div>
         </div>
         <div class="stars2" aria-label="Оценка три звёзды">
 
-          <img src="img/star.svg" width="19" height="17" alt="иконка везда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
+          <img src="img/star.svg" width="19" height="17" alt="иконка везда."> <img src="img/star.svg" width="19" height="17" alt="иконка звезда."> <img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
           <div>
             </div>
             <a href="#" class="rating">Рейтинг: 8,9</a>
@@ -145,13 +145,13 @@
 
           <div class="villas-text-and-buttons">
             <h3 class="head-of-hotel">Villas at Poco Diablo</h3>
-            <p class="price-from">Аппартаменты от 2000 р.</p>
+            <p class="price-from">Апартаменты <span class="price3">от 2000 р.</span></p>
             <a href="#" class="in-details-button">Подробнее</a>
             <a href="#" class="booking-button">Забронировать</a>
           </div>
         </div>
         <div class="stars3"  aria-label="Оценка две звёзды">
-          <img src="img/star.svg" width="19" height="17" alt="иконка везда."><img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
+          <img src="img/star.svg" width="19" height="17" alt="иконка везда."> <img src="img/star.svg" width="19" height="17" alt="иконка звезда.">
           <div>
             <a href="#" class="rating">Рейтинг: 9,2</a>
           </div>
@@ -174,7 +174,7 @@
           <img src="img/youtube.svg" width="20" height="16" alt="ютуб."></a>
       </div>
       <div class="developed-flex">
-        <a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+        <a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss"><span class="font-style">Website by</span></a>
         <a class="developed-by-image"></a>
       </div>
     </section>

@@ -55,6 +55,7 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  box-shadow: 0 0 0 40px var(--basic-extra-light-gray);
 }
 
 a {
@@ -76,6 +77,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .main-navigation-wrapper {
@@ -103,6 +105,7 @@ img {
   list-style: none;
   padding: 0px;
   margin-left: 34px;
+  flex-wrap: wrap;
 }
 
 .filter-option {
@@ -146,13 +149,17 @@ img {
   background-repeat: no-repeat;
   background-position: 0;
 }
+.filter-input-checkbox:focus+label{
+  outline: 1px solid var(--basic-gray);
+}
 
 .filter-input-checkbox:checked+label::before {
   background-image: url(../img/checkbox-shape.svg);
 }
 
-.filter-input-checkbox [disabled]+label {
+.filter-input-checkbox [disabled]+label: focus{
   opacity: 0.3;
+  outline: 1px solid var(--basic-gray);
 }
 
 .head-of-checkbox {
@@ -215,6 +222,7 @@ img {
   line-height: 21px;
   color: var(--basic-white);
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .range-filter {
@@ -714,7 +722,8 @@ form {
   display: block;
   width: 115px;
   height: 41px;
-  margin-top: -2px;
+  margin-top: -3px;
+  margin-left: -3px;
 }
 
 .developed-by-image2 {
@@ -842,6 +851,7 @@ form {
   color: var(--basic-white);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   margin: 0;
 }
@@ -881,6 +891,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: -4px;
 }
 
@@ -908,6 +919,7 @@ form {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   margin-bottom: 75px;
 }
@@ -969,8 +981,9 @@ form {
   background-color: var(--basic-light-gray);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: space-around;
+  flex-wrap:wrap;
+  text-align: center;
 }
 
 .page {
@@ -1055,7 +1068,7 @@ form {
   margin-right: 40px;
 }
 
-.icon-minus {
+  .icon-minus {
   fill: var(--basic-pale-gray);
   width: 10px;
   height: 3px;
@@ -1161,7 +1174,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   margin-left: 70px;
 }
 
@@ -1181,7 +1194,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
   margin-top: 0px;
   margin-left: 170px;
-  margin-bottom: -15px;
+  margin-bottom: -35px;
 }
 
 .footer {
@@ -1220,7 +1233,11 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: -1px;
 }
 
-.font-style {
+.font-style1 {
+  font-weight: normal;
+  margin-left: 12px;
+}
+.font-style2 {
   font-weight: normal;
   margin-left: 10px;
 }
@@ -1229,7 +1246,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border: 1px solid #E5E5E5;
   border-bottom-style: none;
 }
@@ -1238,7 +1255,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border: 1px solid #E5E5E5;
 }
 
@@ -1247,8 +1264,8 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 21px;
   font-weight: normal;
   color: var(--basic-black);
-  margin-top: -16px;
-  margin-bottom: 19px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .price1 {
@@ -1271,6 +1288,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .amara-resort-text-and-buttons {
   flex-direction: column;
+  margin-top: 23px;
 }
 
 .head-of-hotel {
@@ -1299,7 +1317,9 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-wrap: wrap;
 }
 
-.desert-quail-inn-text-and-buttons {}
+.desert-quail-inn-text-and-buttons {
+  margin-top: 23px;
+}
 
 .villas-image {
   display: flex;
@@ -1309,6 +1329,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .villas-text-and-buttons {
   flex-direction: column;
+  margin-top: 23px;
 }
 
 .rating-villas {
@@ -1355,10 +1376,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .icon-down {
-  fill: var(--basic-blue);
+  fill: var(--basic-normal-gray);
 }
 
-.icon-down:hover {
+.icon-down:hover,
+.icon-down:focus {
   fill: var(--basic-black);
 }
 
@@ -1371,7 +1393,8 @@ input[type="number"]::-webkit-inner-spin-button {
   fill: var(--basic-normal-gray);
 }
 
-.icon-up:hover {
+.icon-up:hover,
+.icon-up:focus{
   fill: var(--basic-black);
 }
 
@@ -1404,7 +1427,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .calendarb {
   fill: var(--basic-pale-gray);
   border-style: none;
-  margin-left: -45px
+  margin-left: -45px;
+  background-color: transparent;
 }
 
 .calendarb:hover {
@@ -1423,6 +1447,8 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: -8px;
   text-indent: 10px;
   margin-left: 40px;
+  font-weight:bold;
+  color: var(--basic-black);
 }
 
 .calendar1 {
@@ -1433,6 +1459,8 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: -8px;
   text-indent: 10px;
   margin-left: 20px;
+  font-weight:bold;
+  color: var(--basic-black);
 }
 
 .calendar:hover {
@@ -1440,6 +1468,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .calendar:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-extra-extra-light-gray);
+}
+.calendar1:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-extra-extra-light-gray);
 }

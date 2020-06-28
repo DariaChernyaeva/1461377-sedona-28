@@ -1,20 +1,42 @@
 
 
-var formbutton = document.querySelector(".search-of-hotel");
-var form = document.querySelector(".form-flex");
-
-formbutton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    form.classList.toggle("modal-show");
-});
-
+var loginLink = document.querySelector(".search-of-hotel");
+var loginPopup= document.querySelector(".form-flex");
+var loginLogin = loginPopup.querySelector(".calendar")
+var loginPassword = loginPopup.querySelector(".calendar1")
 var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem(".form-flex");
+  storage = localStorage.getItem("login");
 } catch (err) {
   isStorageSupport = false;
 }
+
+
+loginPopup.classList.add("modal-show");
+
+
+loginLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    loginPopup.classList.toggle("modal-show");
+    loginLogin.focus();
+   
+});
+
+loginPopup.addEventListener("submit", function (evt) {
+  if (!loginLogin.value || !loginPassword.value) {
+    evt.preventDefault();
+    loginPopup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("calendar", loginLogin.value);
+    }
+  }
+});
+
+
+
+
 
 

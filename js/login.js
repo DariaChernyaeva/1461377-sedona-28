@@ -25,7 +25,7 @@ loginLink.addEventListener("click", function (evt) {
 });
 
 loginPopup.addEventListener("submit", function (evt) {
-  loginPopup.classList.remove("modal-errow");
+  loginPopup.classList.remove("modal-error");
   document.body.offsetWidth = document.body.offsetWidth
   if (!loginLogin.value || !loginPassword.value) {
     evt.preventDefault();

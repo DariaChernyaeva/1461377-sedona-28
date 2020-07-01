@@ -466,6 +466,7 @@ img {
   margin: 0 auto;
   margin-top: 48px;
   text-transform: uppercase;
+  border: none;
 }
 
 .search-of-hotel:hover,
@@ -1670,19 +1671,19 @@ opacity: 0.3;
   
   @keyframes shake {
       10%, 90% {
-        transform: translate(-51px, 0);
+        transform: translate(-51%, 0);
       }
       
       20%, 80% {
-        transform: translate(-52px, 0);
+        transform: translate(-52%, 0);
       }
     
       30%, 50%, 70% {
-        transform: translate(-50px, 0);
+        transform: translate(-50%, 0);
       }
     
       40%, 60% {
-        transform: translate(-52px, 0);
+        transform: translate(-52%, 0);
       }
     }  
 
